@@ -9,3 +9,7 @@
     in github as origine where all the web-server files will be pushed and tracked.
     $ git remote add upstream https://github.com/siddharth-0708/node-project.git to use command git pull upstream master
     $ git push --set- https://github.com/siddharth-0708/node-project.git to just use push
+
+    $ git push heroku master
+    To https://git.heroku.com/siddharth0708-weather.git
+    https://siddharth0708-weather.herokuapp.com/ deployed to Heroku
