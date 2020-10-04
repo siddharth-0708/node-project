@@ -6,3 +6,5 @@
     step4: Go to github and create repository with any name.Not neccessary to have the same name as master folder.
     step 5: In master, $ git remote add origin https://github.com/siddharth-0708/node-project.git . this will add npde-project
     in github as origine where all the web-server files will be pushed and tracked.
+    $ git remote add upstream https://github.com/siddharth-0708/node-project.git to use command git pull upstream master
+    $ git push --set- https://github.com/siddharth-0708/node-project.git to just use push
