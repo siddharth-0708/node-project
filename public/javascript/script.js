@@ -26,7 +26,7 @@ weatherElement.addEventListener('submit',function(event){
     const location = searchElement.value;
 
     //fetch('http://localhost:3500/weather?address='+ location).then(function(response){
-    fetch('/weather?address='+ location).then(function(response){ //hrtoku
+    fetch('/weather?address='+ location).then(function(response){ //give like how we give in get address....herooku
         response.json().then(function(data){
             if(data.error){
                 message1.textContent = data.error;
