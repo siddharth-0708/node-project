@@ -1,0 +1,30 @@
+title {
+    color: pink;
+}
+p {
+    color: black;
+    font-style: italic;
+}
+h{
+    color: chocolate;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+    color: darkblue;
+}
+#message1 {
+    color:black;
+    font-family: serif;
+    font-style: normal;
+}
+#message2 {
+    color: black;
+    font-family: serif;
+    font-style: normal;
+}
+form {
+    padding: 5px;
+}
+button {
+    cursor: pointer;
+}
