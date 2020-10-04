@@ -25,7 +25,8 @@ weatherElement.addEventListener('submit',function(event){
     event.preventDefault();
     const location = searchElement.value;
 
-    fetch('http://localhost:3500/weather?address='+ location).then(function(response){
+    //fetch('http://localhost:3500/weather?address='+ location).then(function(response){
+    fetch('/weather?address='+ location).then(function(response){ //hrtoku
         response.json().then(function(data){
             if(data.error){
                 message1.textContent = data.error;

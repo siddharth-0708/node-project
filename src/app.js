@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3500
 
 var geo = require('./utils/geoCode.js'); // when requiring something from exports, we need to give complete file name and not just the directory
 var weather = require('./utils/weatherCode.js');
@@ -77,6 +78,6 @@ app.get('*', function(req, res){
     );
 })
 
-app.listen(3500, function(){
-    console.log("web server is running with port 3500");
+app.listen(port, function(){
+    console.log("web server is running with port" + port);
 })
