@@ -17,9 +17,11 @@ app.set('views', viewPath); // set path from where it will look for views folder
 // app.get('', function(req, res){ // get is by default it is setting root open and / to go further isrrespective of the path
 //     res.send("hello webserver");
 // })
-app.use(express.static(gamePath)); //takes current directory by gamepath and looks for index.html by default else u can give (/index) in page. similarly, from here move forward to acess any other HTML file, it is static
 
-app.get('/about', function(req, res){ // when someone visiting /about from the root that is opening page by default 
+//***IMPORTANT***
+app.use(express.static(gamePath)); //One way : takes current directory by gamepath and looks for index.html by default else u can give (/index) in page. similarly, from here move forward to acess any other HTML file, it is static. In this case the current directory on any hosting is from the public folder, HTML
+
+app.get('/about', function(req, res){ // second way: from the root directory of any server, when someone visiting /about from the root that is opening page by default 
     res.render('about',{ //about is the file name that is rendered on the screen(HTML page), automatically searches for in views folder for about file and it will take path whatever set in views. So it will be __dirname,'../views/about' which is correct
         title1:"ABOUT",
         name: "siddharth"

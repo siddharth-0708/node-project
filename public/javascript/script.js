@@ -25,8 +25,8 @@ weatherElement.addEventListener('submit',function(event){
     event.preventDefault();
     const location = searchElement.value;
 
-    //fetch('http://localhost:3500/weather?address='+ location).then(function(response){
-    fetch('/weather?address='+ location).then(function(response){ //give like how we give in get address....herooku
+    //fetch('http://localhost:3500/weather?address='+ location).then(function(response){ //package.json script start saying the server what to run on start so that webserver is running and heroku gives default port to run on , in app,js it is kept
+    fetch('/weather?address='+ location).then(function(response){ //from root it will go like declared in app.js, give like how we give in get address....herooku
         response.json().then(function(data){
             if(data.error){
                 message1.textContent = data.error;
