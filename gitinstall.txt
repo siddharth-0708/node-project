@@ -14,3 +14,4 @@
     To https://git.heroku.com/siddharth0708-weather.git
     https://siddharth0708-weather.herokuapp.com/ deployed to Heroku
     PS C:\> .\/users/AF001AX/mongoDB/bin/mongod.exe --dbpath=/users/AF001AX/mongoDB-data from c to open mongof.exe ie terminal.jUST LIKE GIT
+    note: From now on GIT has removed the word master.So now if u generate new git, rename it with main and use pull upstream main $ git branch -m main master
